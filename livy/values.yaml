@@ -75,7 +75,10 @@ resources: {}
 
 nodeSelector: {}
 
-tolerations: []
+tolerations:
+  - key: dedicated
+    operator: Exists
+    effect: NoSchedule
 
 affinity: {}
   # nodeAffinity:
